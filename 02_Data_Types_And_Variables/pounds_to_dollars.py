@@ -1,5 +1,6 @@
 import requests
 
+
 def convert_gbp_to_usd(amount):
     response = requests.get('https://api.exchangerate-api.com/v4/latest/GBP')
     exchange_rates = response.json()['rates']
